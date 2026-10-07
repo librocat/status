@@ -2,25 +2,25 @@ owner: librocat
 repo: status
 
 sites:
-  - name: librocat.dev
-    url: https://librocat.dev
-  - name: Remote MCP (librocat.dev/mcp)
-    url: https://librocat.dev/mcp
+  - name: librocat.com
+    url: https://librocat.com
+  - name: Remote MCP (librocat.com/mcp)
+    url: https://librocat.com/mcp
     method: POST
     # No token is sent, so a healthy endpoint answers 401.
     expectedStatusCodes:
       - 401
 
 status-website:
-  cname: status.librocat.dev
-  logoUrl: https://librocat.dev/logo.svg
+  cname: status.librocat.com
+  logoUrl: https://librocat.com/logo.svg
   name: librocat status
   introTitle: "**librocat Cloud** status"
   introMessage: Checked every five minutes by GitHub Actions. Incidents are the open issues on this repository.
   navbar:
     - title: Status
       href: /
-    - title: librocat.dev
-      href: https://librocat.dev
+    - title: librocat.com
+      href: https://librocat.com
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
